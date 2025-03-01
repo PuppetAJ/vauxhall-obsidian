@@ -372,6 +372,7 @@ settings:
   --color-accent-2: var(--color-base-70); */
   --text-selection: var(--color-base-45);
   --text-accent: var(--color-base-100);
+  --text-accent-hover: var(--color-base-70);
 
   /* Setting below is for links and special text in the settings descriptions */
   .setting-item-description {
@@ -381,7 +382,7 @@ settings:
 
   /* Setting to use accent color for links in notes */
   .cm-underline {
-    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   }
 
   --background-modifier-hover: color-mix(
@@ -437,6 +438,7 @@ settings:
   --color-pink: var(--magenta);
 
   --background-primary: var(--color-base-05);
+  --background-primary-alt: var(--color-base-25);
   --background-secondary: var(--color-base-05);
   --titlebar-background: var(--color-base-00);
   --titlebar-background-focused: var(--color-base-10);
@@ -515,14 +517,20 @@ settings:
   --active-bg: rgba(188, 182, 196, 0.1);
 
   --interactive-accent: var(--color-base-70);
-  --interactive-accent-hover: var(--color-base-100);
+  --interactive-accent-hover: var(--color-base-80);
   --interactive-hover: var(--color-base-30);
+
+  .vertical-tab-nav-item.is-active,
+  .setting-item-control .mod-cta {
+    color: white !important;
+  }
   /* Enable below to use accent colors for ALL items */
   /* --color-accent: var(--color-base-100);
   --color-accent-1: var(--color-base-100);
   --color-accent-2: var(--color-base-70); */
   --text-selection: var(--color-base-45);
   --text-accent: var(--color-base-100);
+  --text-accent-hover: var(--color-base-60);
 
   /* Setting below is for links and special text in the settings descriptions */
   .setting-item-description {
@@ -532,7 +540,7 @@ settings:
 
   /* Setting to use accent color for links in notes */
   .cm-underline {
-    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   }
 
   --background-modifier-hover: color-mix(
