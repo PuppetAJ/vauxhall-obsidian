@@ -371,12 +371,17 @@ settings:
   --color-accent-1: var(--color-base-100);
   --color-accent-2: var(--color-base-70); */
   --text-selection: var(--color-base-45);
+  --text-accent: var(--color-base-100);
 
   /* Setting below is for links and special text in the settings descriptions */
   .setting-item-description {
     --link-color: var(--color-base-100);
     --link-color-hover: var(--color-base-80);
-    --text-accent: var(--color-base-100);
+  }
+
+  /* Setting to use accent color for links in notes */
+  .cm-underline {
+    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   }
 
   --background-modifier-hover: color-mix(
@@ -517,12 +522,17 @@ settings:
   --color-accent-1: var(--color-base-100);
   --color-accent-2: var(--color-base-70); */
   --text-selection: var(--color-base-45);
+  --text-accent: var(--color-base-100);
 
   /* Setting below is for links and special text in the settings descriptions */
   .setting-item-description {
     --link-color: var(--color-base-100);
     --link-color-hover: var(--color-base-80);
-    --text-accent: var(--color-base-100);
+  }
+
+  /* Setting to use accent color for links in notes */
+  .cm-underline {
+    color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   }
 
   --background-modifier-hover: color-mix(
