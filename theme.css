@@ -288,7 +288,7 @@ settings:
   --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--black));
   --color-base-15: color-mix(in srgb, var(--vauxhall-bg) 60%, var(--black));
   --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
-  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--black));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 85%, var(--black));
   --color-base-30: color-mix(
     in srgb,
     var(--vauxhall-bg) 90%,
@@ -349,7 +349,7 @@ settings:
 
   /* Indentation Guides for Lists */
   --indentation-guide-color: var(--color-base-30);
-  --indentation-guide-color-active: var(--color-base-35);
+  --indentation-guide-color-active: var(--color-base-40);
 
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --text-highlight-bg-active: color-mix(
@@ -381,8 +381,18 @@ settings:
   }
 
   /* Setting to use accent color for links in notes */
-  .cm-underline {
+  .cm-underline,
+  .cm-link,
+  .cm-url,
+  .cm-hmd-internal-link,
+  .external-link,
+  .internal-link {
     color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  }
+
+  .cm-formatting-link,
+  .cm-formatting-link-string {
+    color: var(--color-base-50) !important;
   }
 
   --background-modifier-hover: color-mix(
@@ -430,7 +440,7 @@ settings:
 
   --color-red: var(--hot-red);
   --color-orange: #fa9f50;
-  --color-yellow: #ffd85e;
+  --color-yellow: #ecb716;
   --color-green: var(--mint);
   --color-cyan: var(--cool-cyan);
   --color-blue: var(--blue);
@@ -447,7 +457,7 @@ settings:
   --color-base-05: color-mix(in srgb, var(--vauxhall-bg) 40%, var(--white));
   --color-base-10: color-mix(in srgb, var(--vauxhall-bg) 50%, var(--white));
   --color-base-20: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
-  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 80%, var(--white));
+  --color-base-25: color-mix(in srgb, var(--vauxhall-bg) 85%, var(--white));
   --color-base-30: color-mix(
     in srgb,
     var(--vauxhall-bg) 90%,
@@ -503,7 +513,7 @@ settings:
 
   /* Indentation Guides for Lists */
   --indentation-guide-color: var(--color-base-30);
-  --indentation-guide-color-active: var(--color-base-35);
+  --indentation-guide-color-active: var(--color-base-45);
 
   --text-highlight-bg: color-mix(in srgb, var(--h1-color) 25%, transparent);
   --text-highlight-bg-active: color-mix(
@@ -511,7 +521,8 @@ settings:
     var(--h1-color) 25%,
     transparent
   );
-  --code-background: var(--color-base-30);
+
+  --code-background: var(--color-base-25);
 
   /* Used for active state in file navigation */
   --active-bg: rgba(188, 182, 196, 0.1);
@@ -539,8 +550,18 @@ settings:
   }
 
   /* Setting to use accent color for links in notes */
-  .cm-underline {
+  .cm-underline,
+  .cm-link,
+  .cm-url,
+  .cm-hmd-internal-link,
+  .external-link,
+  .internal-link {
     color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
+  }
+
+  .cm-formatting-link,
+  .cm-formatting-link-string {
+    color: var(--color-base-50) !important;
   }
 
   --background-modifier-hover: color-mix(
