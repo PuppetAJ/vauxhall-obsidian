@@ -363,8 +363,8 @@ settings:
   /* Used for active state in file navigation */
   --active-bg: rgba(188, 182, 196, 0.1);
 
-  --interactive-accent: var(--color-base-70);
-  --interactive-accent-hover: var(--color-base-100);
+  --interactive-accent: var(--color-base-50);
+  --interactive-accent-hover: var(--color-base-60);
   --interactive-hover: var(--color-base-40);
   /* Enable below to use accent colors for ALL items */
   /* --color-accent: var(--color-base-100);
@@ -373,6 +373,7 @@ settings:
   --text-selection: var(--color-base-45);
   --text-accent: var(--color-base-100);
   --text-accent-hover: var(--color-base-70);
+  --text-on-accent: #ffffff !important;
 
   /* Setting below is for links and special text in the settings descriptions */
   .setting-item-description {
@@ -529,14 +530,10 @@ settings:
   /* Used for active state in file navigation */
   --active-bg: rgba(188, 182, 196, 0.1);
 
-  --interactive-accent: var(--color-base-70);
-  --interactive-accent-hover: var(--color-base-80);
+  --interactive-accent: var(--color-base-45);
+  --interactive-accent-hover: var(--color-base-50);
   --interactive-hover: var(--color-base-30);
 
-  .vertical-tab-nav-item.is-active,
-  .setting-item-control .mod-cta {
-    color: white !important;
-  }
   /* Enable below to use accent colors for ALL items */
   /* --color-accent: var(--color-base-100);
   --color-accent-1: var(--color-base-100);
@@ -646,9 +643,15 @@ img {
   border-radius: 6px;
 }
 
+/* Calendar plugin fix */
 #calendar-container .year,
 #calendar-container .today {
   color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+}
+
+/* Day Planner plugin fix */
+.day-controls .today {
+  background-color: var(--color-base-70);
 }
 
 /* input {
