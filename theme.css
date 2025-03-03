@@ -386,7 +386,9 @@ settings:
   .cm-url,
   .cm-hmd-internal-link,
   .external-link,
-  .internal-link {
+  .internal-link,
+  .is-unresolved {
+    --link-color-hover: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   }
 
@@ -555,7 +557,9 @@ settings:
   .cm-url,
   .cm-hmd-internal-link,
   .external-link,
-  .internal-link {
+  .internal-link,
+  .is-unresolved {
+    --link-color-hover: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     color: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   }
 
