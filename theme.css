@@ -363,7 +363,7 @@ settings:
   /* Used for active state in file navigation */
   --active-bg: rgba(188, 182, 196, 0.1);
 
-  --interactive-accent: var(--color-base-50);
+  --interactive-accent: var(--color-base-45);
   --interactive-accent-hover: var(--color-base-60);
   --interactive-hover: var(--color-base-40);
   /* Enable below to use accent colors for ALL items */
