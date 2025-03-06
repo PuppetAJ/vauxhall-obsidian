@@ -366,10 +366,10 @@ settings:
   --interactive-accent: var(--color-base-45);
   --interactive-accent-hover: var(--color-base-60);
   --interactive-hover: var(--color-base-40);
-  /* Enable below to use accent colors for ALL items */
-  /* --color-accent: var(--color-base-100);
-  --color-accent-1: var(--color-base-100);
-  --color-accent-2: var(--color-base-70); */
+
+  --color-accent: var(--color-base-70);
+  --color-accent-1: var(--color-base-80);
+  --color-accent-2: var(--color-base-100);
   --text-selection: var(--color-base-45);
   --text-accent: var(--color-base-100);
   --text-accent-hover: var(--color-base-70);
@@ -534,10 +534,9 @@ settings:
   --interactive-accent-hover: var(--color-base-50);
   --interactive-hover: var(--color-base-30);
 
-  /* Enable below to use accent colors for ALL items */
-  /* --color-accent: var(--color-base-100);
-  --color-accent-1: var(--color-base-100);
-  --color-accent-2: var(--color-base-70); */
+  --color-accent: var(--color-base-70);
+  --color-accent-1: var(--color-base-80);
+  --color-accent-2: var(--color-base-100);
   --text-selection: var(--color-base-45);
   --text-accent: var(--color-base-100);
   --text-accent-hover: var(--color-base-60);
