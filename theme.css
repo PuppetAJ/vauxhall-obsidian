@@ -658,6 +658,11 @@ img {
   background-color: var(--color-base-50);
 }
 
+/* Toolbar plugin margin fix */
+#cMenuToolbarModalBar {
+  margin: 0 0.75rem;
+}
+
 /* input {
 	color: var(--lavender) !important;
 } */
